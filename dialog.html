@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dialog</title>
+		<style>
+			.dialog {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+      팝업이 열릴 시에는 팝업이 열렸는지 알려주기 위해서 제목에 focus 지정
+      tab키를 계속 할때에 포커스가 팝업안에서 돌고 돌아야 함
+      shift+tab키 누를 시 만약 포커스가 제목에 있고 shift+tab키를 누르면 팝업 닫기를 하는게 좋음
+      팝업이 닫을시에는 첨에 클릭한 이전버튼으로 다시 포커스 지정해야함
+      esc키를 눌러시 팝업닫기 해주면 더 좋음
+    -->
+		<button class="btn-open">팝업열기</button>
+		<div class="dialog" role="dialog" aria-hidden="true">
+			<div class="dialog-wrap">
+				<h2 class="dialog-title" tabindex="0">팝업제목</h2>
+				<button class="btn-close">닫기</button>
+				<div class="dialog-content">내용</div>
+			</div>
+		</div>
+	</body>
+</html>
