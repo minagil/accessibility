@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wai aria</title>
+	</head>
+	<body>
+		<h2>group content : 접근성 o</h2>
+		<div class="group-content">
+			<div>전화번호</div>
+			<div>
+				<select title="전화번호 첫번째자리 선택">
+					<option>010</option>
+				</select>
+				-
+				<input type="tel" title="전화번호 중간자리 입력" />
+				-
+				<input type="tel" title="전화번호 마지막자리 입력" />
+			</div>
+		</div>
+
+		<h2>group content : 접근성 ARIA</h2>
+		<div class="group-content">
+			<div id="tel">전화번호</div>
+			<div role="group" aria-labelledby="tel">
+				<select title="전화번호 첫번째자리 선택">
+					<option>010</option>
+				</select>
+				-
+				<input type="tel" title="전화번호 중간자리 입력" />
+				-
+				<input type="tel" title="전화번호 마지막자리 입력" />
+			</div>
+		</div>
+
+		<h2>group content : 접근성 o</h2>
+		<div>주소</div>
+		<!-- placeholder : 접근성 대체 텍스트로 보지 않음(읽어주기는함) -->
+		<div clas="address">
+			<input type="number" readonly title="우편번호" />
+			<!-- 우편번호 버튼이 어떤역할인지 명확하게 -->
+			<button>우편번호 <span class="blind">찾기</span></button>
+			<input type="text" placeholder="기본주소" readonly title="기본주소" />
+			<input type="text" placeholder="상세주소" title="상세주소" />
+		</div>
+
+		<h2>group content : 접근성 ARIA</h2>
+		<div id="ally-address">주소</div>
+		<div clas="address" role="group" aria-labelledby="ally-address">
+			<input type="number" readonly title="우편번호" />
+			<button>우편번호 <span class="blind">찾기</span></button>
+			<input type="text" placeholder="기본주소" readonly title="기본주소" />
+			<input type="text" placeholder="상세주소" title="상세주소" />
+		</div>
+	</body>
+</html>

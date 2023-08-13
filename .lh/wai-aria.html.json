@@ -1,0 +1,46 @@
+{
+    "sourceFile": "wai-aria.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1691912182282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691912189436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n   <meta charset=\"UTF-8\">\r\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-  <title>Document</title>\r\n+  <title>Wa</title>\r\n </head>\r\n <body>\r\n   \r\n </body>\r\n"
+                },
+                {
+                    "date": 1691912195189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+<!DOCTYPE html>\r\n+<html lang=\"ko\">\r\n+<head>\r\n+  <meta charset=\"UTF-8\">\r\n+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+  <title>Wai aria</title>\r\n+</head>\r\n+<body>\r\n+  \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691912211262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,18 +5,7 @@\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n   <title>Wai aria</title>\r\n </head>\r\n <body>\r\n-  \r\n+  <h2>group content</h2>\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-  <meta charset=\"UTF-8\">\r\n-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-  <title>Wa</title>\r\n-</head>\r\n-<body>\r\n-  \r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691912218492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n   <title>Wai aria</title>\r\n </head>\r\n <body>\r\n   <h2>group content</h2>\r\n+  <div class=\"group-content\"\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691912238735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,14 @@\n   <title>Wai aria</title>\r\n </head>\r\n <body>\r\n   <h2>group content</h2>\r\n-  <div class=\"group-content\"\r\n+  <div class=\"group-content\">\r\n+    <div>전화번호</div>\r\n+    <div>\r\n+      <select>\r\n+        <op\r\n+      </select>\r\n+    </div>\r\n+  </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691912246163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <div>\r\n       <select>\r\n         <option>010</option>\r\n       </select>\r\n-      UTF-8\r\n+      -\r\n     </div>\r\n   </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691912339469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \t\t\t\t</select>\r\n \t\t\t\t-\r\n \t\t\t\t<input type=\"tel\" title=\"전화번호 중간자리 입력\"/>\r\n \t\t\t\t-\r\n-\t\t\t\t<input type=\"tel\" />\r\n+\t\t\t\t<input type=\"tel\" title=\"전화번호 마지막자리 입력\"/>\r\n \t\t\t</div>\r\n \t\t</div>\r\n \t</body>\r\n </html>\r\n"
+                }
+            ],
+            "date": 1691912182282,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Document</title>\r\n</head>\r\n<body>\r\n  \r\n</body>\r\n</html>"
+        }
+    ]
+}
